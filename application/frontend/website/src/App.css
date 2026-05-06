@@ -1,0 +1,107 @@
+/* Overrides for templatemo header: floats + fixed logo line-height fight Bootstrap flex nav */
+.header-area.app-top-nav {
+  height: auto;
+  min-height: 80px;
+}
+
+.header-area.app-top-nav .main-nav {
+  min-height: 72px;
+  align-items: center;
+}
+
+.header-area.app-top-nav .main-nav .logo {
+  float: none;
+  line-height: 1.25;
+  align-self: center;
+}
+
+.header-area.app-top-nav .main-nav .app-top-nav__links {
+  float: none;
+  margin-top: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.header-area.app-top-nav .main-nav .app-top-nav__links > li {
+  display: flex;
+  align-items: center;
+}
+
+.header-area.app-top-nav .main-nav .app-top-nav__links > li > a.nav-link {
+  height: auto;
+  min-height: 2.5rem;
+  line-height: 1.25;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.header-area.app-top-nav .main-nav .app-top-nav__user {
+  height: auto;
+  min-height: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.header-area.app-top-nav .main-nav .app-top-nav__user .btn-link {
+  vertical-align: middle;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.header-area.app-top-nav.background-header .main-nav .app-top-nav__links {
+  margin-top: 0 !important;
+}
+
+.header-area.app-top-nav.background-header .main-nav .logo {
+  line-height: 1.25 !important;
+}
+
+.header-area.app-top-nav.background-header .main-nav {
+  min-height: 72px;
+  align-items: center;
+}
+
+.header-area.app-top-nav.background-header .main-nav .app-top-nav__links > li,
+.header-area.app-top-nav.background-header .main-nav .app-top-nav__links > li > a.nav-link,
+.header-area.app-top-nav.background-header .main-nav .app-top-nav__user {
+  min-height: 2.5rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 767px) {
+  .header-area.app-top-nav .main-nav {
+    overflow: visible;
+  }
+
+  .header-area.app-top-nav .main-nav .app-top-nav__links {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .header-area.app-top-nav.header-sticky .app-top-nav__links {
+    margin-top: 0 !important;
+  }
+
+  .header-area.app-top-nav .main-nav .app-top-nav__links > li {
+    width: auto;
+    background: transparent;
+    border-bottom: none;
+    padding-left: 0.35rem !important;
+    padding-right: 0.35rem !important;
+  }
+
+  .header-area.app-top-nav .main-nav .app-top-nav__links > li > a.nav-link {
+    background: transparent !important;
+    min-height: auto;
+    padding: 0.35rem 0.25rem !important;
+  }
+}
