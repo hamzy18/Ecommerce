@@ -43,7 +43,7 @@ app.use('/api/reviews', reviewRoutes)
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(_dirname, 'Frontend/website/dist')))
-  app.get('*', (req, res) => {
+  app.use( (req, res) => {
     res.sendFile(path.join(_dirname, 'Frontend/website/dist', 'index.html'))
   })
 }
